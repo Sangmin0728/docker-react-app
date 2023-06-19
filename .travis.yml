@@ -14,3 +14,16 @@ script:
 
 after_success:
   - echo "Test Success"
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: ap-northeast-2
+#   app: "docker-react-app"
+#   env: "DockerReactApp-env"
+#   bucket_name: "해당 elasticbeanstalk을 위한 s3 bucket name을 넣음"
+#   bucket_path: "어플리케이션 이름과 동일"
+#   on:
+#     branch: "master => push가 감지가 되는 브랜치" 
+
+#   access_key_id: $AWS_ACCESS_KEY #Travis 사이트에 직접 저장해놓고 불러서 씀
+#   secret_access_key: $AWS_SECRET_ACCESS_KEY #Travis 사이트에 직접 저장해놓고 불러서 씀
